@@ -1,0 +1,54 @@
+@import 'style_textFormatting.css';
+@import 'style_pageFormatting.css';
+.container {
+    /*dsipaly mode : Grid*/
+    /* grid setup */
+    grid-template-columns: repeat(3, 1fr) 150px;
+    grid-template-rows: auto minmax(500px, 1fr) auto;
+    grid-template-areas: "hd hd hd hd" "ma ma ma sd" "ft ft ft ft";
+}
+
+@media(min-width:900px) {
+    html, body {
+        /* background-color: tomato; */
+    }
+}
+
+/* ---------------MAIN PAGE Container Boxes-------------- */
+
+
+/* ---------------NESTED GRIDS-------------- */
+
+#nestedGrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* border: 1px solid white; */
+}
+
+.photoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 10px;
+    width: 1fr;
+    height: 300px;
+    padding: 5px;
+    /* border: 2px dashed black; */
+    background-color: rgba(220, 20, 60, 0.452);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.photoBox>p {
+    padding: 3px;
+    margin: 1px;
+    border: 1px solid;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.photoBox>p:hover {
+    transition: .4s ease;
+    background-color: rgba(255, 255, 255, 0.562);
+}

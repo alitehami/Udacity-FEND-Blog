@@ -1,0 +1,19 @@
+@import 'style_textFormatting.css';
+@import 'style_pageFormatting.css';
+.embededFrames {
+    font-size: 1.2em;
+    /* background-image: url('http://glform.com/wp-content/uploads/2016/05/DSC_6994-516x344.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    font-size: 1.2em;
+    color: rgb(50, 87, 129);
+}
+
+img {
+    opacity: 70%;
+    background-blend-mode: overlay;
+}

@@ -1,0 +1,140 @@
+html, body {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    background-image: url('../images/fondo-abstracto-blanco-estilo-papel-3d/3334702.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    fill-opacity: 50%;
+}
+
+html.iframe, body.iframe {
+    background-image: none;
+    background-color: transparent;
+}
+
+.container, .box {
+    /* border-style: solid; */
+    border-width: 1px;
+    border-color: rgb(207, 30, 30);
+}
+
+/* ---------------MAIN PAGE Container Boxes Start-------------- */
+
+.container {
+    /*dsipaly mode to Grid*/
+    display: grid;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    grid-gap: 10px;
+    /* grid setup */
+    grid-template-columns: repeat(3, 1fr) 150px;
+    grid-template-rows: auto minmax(500px, 1fr) auto;
+    grid-template-areas: "hd hd hd hd" "ma ma ma sd" "ft ft ft ft";
+}
+
+.header {
+    grid-area: hd;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    margin-left: calc(-5% - 10px);
+    margin-right: calc(-5% - 10px);
+    margin-top: -10px;
+    opacity: 90%;
+}
+
+.side {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: ma;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+/* ---------------MAIN PAGE Container Boxes End-------------- */
+
+.footer>hr {
+    border: 3px solid rgba(130, 130, 130, 0.3);
+    border-radius: 3px;
+}
+
+.side>div {
+    border-left: solid;
+    border-color: rgba(130, 130, 130, 0.3);
+    border-width: 6px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.box {
+    padding: 5px;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, rgb(236, 236, 236), rgb(255, 255, 255));
+}
+
+iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: minmax(500px, 1000px);
+}
+
+/* side bar settings - start */
+
+iframe.sidebarQuickLinks {
+    height: calc(100%);
+}
+
+.sidebarQuickLinksCards>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    border: solid;
+    border-color: rgba(122, 148, 156, 0.479);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* side bar settings - end */
+
+.sidebarQuickLinksCards {
+    display: flex;
+    flex-flow: wrap;
+    margin: 5px;
+    padding: 5px;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.089);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkslateblue;
+}
+
+th, td {
+    padding: 5px;
+    height: 20px;
+}
+
+li {
+    list-style-type: none;
+}
