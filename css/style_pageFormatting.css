@@ -18,6 +18,10 @@ html.iframe, body.iframe {
     border-color: rgb(207, 30, 30);
 }
 
+li {
+    list-style-type: none;
+}
+
 /* ---------------MAIN PAGE Container Boxes Start-------------- */
 
 .container {
@@ -27,21 +31,21 @@ html.iframe, body.iframe {
     padding: 5px;
     margin: auto;
     grid-gap: 10px;
-    /* grid setup */
-    grid-template-columns: repeat(3, 1fr) 150px;
-    grid-template-rows: auto minmax(500px, 1fr) auto;
-    grid-template-areas: "hd hd hd hd" "ma ma ma sd" "ft ft ft ft";
 }
 
 .header {
     grid-area: hd;
     z-index: 1;
     position: sticky;
-    top: 0px;
+    top: 0;
     margin-left: calc(-5% - 10px);
     margin-right: calc(-5% - 10px);
     margin-top: -10px;
     opacity: 90%;
+    background-image: url('../images/elegante-fondo-abstracto-linea-hexagonal/20593_cropped.jpg');
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .side {
@@ -54,14 +58,19 @@ html.iframe, body.iframe {
 
 .footer {
     grid-area: ft;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* ---------------MAIN PAGE Container Boxes End-------------- */
-
-.footer>hr {
+footer>hr {
     border: 3px solid rgba(130, 130, 130, 0.3);
     border-radius: 3px;
+    width: 100%;
 }
+
 
 .side>div {
     border-left: solid;
@@ -70,6 +79,28 @@ html.iframe, body.iframe {
     border-radius: 3px;
     padding-left: 10px;
 }
+
+
+/* ---------------MAIN PAGE Container Boxes End-------------- */
+
+/* ---------------Avatar Pics-------------- */
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.avatar.aliTehami {
+    background-image: url('../images/avatar/aliTehami.jpg');
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+/* ---------------Avatar Pics End-------------- */
+
 
 .box {
     padding: 5px;
@@ -95,16 +126,18 @@ iframe.sidebarQuickLinks {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     border: solid;
-    border-color: rgba(122, 148, 156, 0.479);
+    border-color: rgba(141, 144, 145, 0.479);
     margin: 10px;
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 0;
+    background-image: url('../images/abstract-gray-dotted-pattern-background/18653.jpg');
+    background-size: cover;
 }
-/* side bar settings - end */
 
 .sidebarQuickLinksCards {
     display: flex;
@@ -112,6 +145,8 @@ iframe.sidebarQuickLinks {
     margin: 5px;
     padding: 5px;
 }
+
+/* side bar settings - end */
 
 .shadow {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.089);
@@ -135,6 +170,6 @@ th, td {
     height: 20px;
 }
 
-li {
-    list-style-type: none;
+.cite {
+    font-size: 0.75em;
 }

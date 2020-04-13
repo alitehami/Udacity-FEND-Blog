@@ -12,12 +12,24 @@ font-family: 'Shadows Into Light', cursive; */
 html, body {
     font-family: 'Comic Neue', cursive;
     font-size: 1em;
+    color: rgb(70, 70, 70)
+}
+
+h1, h2, h3 {
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 h1 {
-    font-size: 1.5em;
-    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
 }
+
+h2{
+    font-stretch: expanded;
+    text-decoration: underline;
+}
+
 
 h5 {
     color: rgb(138, 151, 153);
@@ -26,17 +38,12 @@ h5 {
 }
 
 .titles {
+    font-size: 1.5em;
     font-family: 'Pacifico', cursive;
-    color: rgb(70, 70, 70)
-}
-
-.main {
-    color: rgb(49, 67, 83);
 }
 
 a {
-    font-size: 0.9em;
-    color: rgb(14, 35, 105);
+    color: rgb(80, 104, 182);
     font-style: italic;
 }
 
@@ -44,13 +51,11 @@ a:hover {
     color: rgb(139, 206, 224);
 }
 
-/* cool blockquote styling from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
     padding: 0.5em 10px;
-    margin: 0px;
-    quotes: "\201C""\201D""\2018""\2019";
+    margin: 0;
 }
 
 blockquote:before {
@@ -66,4 +71,4 @@ blockquote>p {
     display: inline;
 }
 
-/* blockquote styling */
+/* blockquote styling end */

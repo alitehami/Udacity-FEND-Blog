@@ -1,5 +1,6 @@
 @import 'style_textFormatting.css';
 @import 'style_pageFormatting.css';
+
 .container {
     /*dsipaly mode : Grid*/
     /* grid setup */
@@ -15,7 +16,12 @@
 }
 
 /* ---------------MAIN PAGE Container Boxes-------------- */
-
+.container {
+    /* grid setup */
+    grid-template-columns: repeat(3, 1fr) 150px;
+    grid-template-rows: auto minmax(500px, 1fr) auto;
+    grid-template-areas: "hd hd hd hd" "ma ma ma sd" "ft ft ft ft";
+}
 
 /* ---------------NESTED GRIDS-------------- */
 

@@ -1,0 +1,14 @@
+@import 'blog.css';
+.container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "hd" "sd" "ma" "ft";
+}
+
+.side, .footer {
+    display: none;
+}
+
+.content{
+    text-align: center;
+}
