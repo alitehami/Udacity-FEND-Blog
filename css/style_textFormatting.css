@@ -15,7 +15,7 @@ html, body {
     color: rgb(70, 70, 70)
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -25,16 +25,19 @@ h1 {
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-stretch: expanded;
     text-decoration: underline;
 }
-
 
 h5 {
     color: rgb(138, 151, 153);
     margin-top: 1px;
     margin-bottom: 1px;
+}
+
+h1.article {
+    margin-bottom: 5px;
 }
 
 .titles {
@@ -69,6 +72,11 @@ blockquote:before {
 
 blockquote>p {
     display: inline;
+}
+
+p#smallText {
+    font-size: 0.75em;
+    margin-bottom: 0px;
 }
 
 /* blockquote styling end */

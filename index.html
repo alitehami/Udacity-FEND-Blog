@@ -5,15 +5,13 @@
 <head>
     <!-- <meta http-equiv="refresh" content="1"> -->
     <meta charset="utf-8" />
-    <title>Demo Blog</title>
+    <title>The Coding Architect - Ali Tehami</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
 
     <!-- <style> </style> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
-    
 
 </head>
 
@@ -32,26 +30,54 @@
 
         <!-- side box -->
         <div class="side box">
-            <iframe class="sidebarQuickLinks" scrolling="yes" width="100%" frameBorder="0" src="sidebar.html"></iframe>
+            <iframe class="sidebarQuickLinks" scrolling="no" width="100%" frameBorder="0" src="sidebar.html"></iframe>
+            <iframe class="sidebarQuickLinksCards" scrolling="no" width="100%" min-height="300px" frameBorder="0"
+                src="sidebar_cards.html"></iframe>
         </div>
-
         <!-- content box -->
         <div class="content box">
-            <h2>This is the main page of the blog
-                with the content below:</h2>
+            <h2>Welcome to my blog, <br> here are the most trending articles..</h2>
+            <br>
 
 
             <div id="nestedGrid">
 
-                <div id="one" class="photoBox">
-                    <!-- <strong>ONE</strong> -->
-                    <p>Monday</p>
-                    <p>Wednesday</p>
-                    <p>Friday</p>
+                <a class="photoBox" href="about.html">
+                    <h2>About Me</h2>
+                    <img src="images/media_AliT.png" alt="Ali Tehami's Media Article">
+                    <p>Current Activities</p>
+                    <p>Background</p>
+                    <p>Projects</p>
+                </a>
+
+                <div class="photoBox" id="nestedGrid">
+                    <a class="icon large" id="linkedin" href="https://www.linkedin.com/in/alitehami/"
+                        target="_BLANK"></a>
+                    <a class="icon large" id="twitter" href="https://twitter.com/aliabd110" target="_BLANK"></a>
+                    <a class="icon large" id="youtube" href="https://www.youtube.com/user/aliabd110"
+                        target="_BLANK"></a>
+                    <a class="icon large" id="github" href="https://github.com/alitehami" target="_BLANK"></a>
                 </div>
-                <div id="two" class="photoBox">TWO</div>
-                <div id="three" class="photoBox">THREE</div>
-                <div id="four" class="photoBox">FOUR</div>
+
+                <a class="photoBox" id="twoCells" href="blog.html">
+                    <h2>Biomimicry in Architecture</h2>
+                    <img src="https://cdn.redshift.autodesk.com/2017/07/Biomimicry-in-Architecture-Header_kss.jpg"
+                        alt="Biomimcry in Architecture">
+                </a>
+
+                <a class="photoBox"
+                    href="https://www.woodsbagot.com/news/woods-bagots-facade-automation-workflow-named-a-finalist-in-fast-companys-2019-innovation-by-design-awards/">
+                    <h2> Awards,Facade Automation, Melbourne Connect</h2> <br>
+                    <img src="https://www.woodsbagot.com/wp-content/uploads/legacy/188/1.jpg"
+                        alt="Melbourne Connect Facades">
+                </a>
+                <a class="photoBox" href="blog-2.html">
+                    <h2> Paperbug! Grashopper and Rhino Plugin, under developemnt.</h2><br>
+                    <img src="images/grasshopper-vector-origami-3-original.png"
+                        alt="paperbug, a plugin for grasshopper for rhino3d">
+                    <img src="images/paperbug_aliTehami.png" alt="paperbug, a plugin for grasshopper for rhino3d">
+                </a>
+
 
             </div>
 
